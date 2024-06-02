@@ -14,7 +14,7 @@ from threading import Thread
 _EXES = ['.exe', '.com', '.bat', '.cmd',]
 """A list of all file extensions of interest."""
 
-_CASE_SEN = Path('A') == Path('a')
+_CASE_SEN = Path('A') != Path('a')
 """Specifies whether the underlying filesystem is case sensitive or not."""
 
 
